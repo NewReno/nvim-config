@@ -1,7 +1,32 @@
 -- lua/plugins/indent-blankline.lua
 
-require('indent_blankline').setup({
-  show_current_context = true,
-  show_current_context_start = true,
-  space_char_blankline = ' ',
+require("ibl").setup({
+  indent = {
+    char = "┊",
+    tab_char = "│",
+  },
+  scope = {
+    enabled = true,
+    show_start = false,
+    show_end = false,
+    highlight = { "Function", "Label" },
+  },
+  exclude = {
+    filetypes = {
+      "help",
+      "alpha",
+      "dashboard",
+      "neo-tree",
+      "Trouble",
+      "trouble",
+      "lazy",
+      "mason",
+      "lspinfo",
+      "TelescopePrompt",
+      "TelescopeResults",
+    },
+    buftypes = {
+      "terminal",
+    },
+  },
 })

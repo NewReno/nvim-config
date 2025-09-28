@@ -2,6 +2,9 @@
 
 local map = vim.keymap.set
 
+-- Neo-tree
+map('n', '<leader>e', ':Neotree toggle<CR>', { desc = 'Toggle file explorer' })
+
 -- Быстрые выходы
 map('n', '<leader>q', ':qa<CR>', { desc = 'Quit all' })
 

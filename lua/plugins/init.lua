@@ -41,6 +41,11 @@ require('packer').startup(function(use)
   -- UI
   use 'nvim-lualine/lualine.nvim'
 
+-- File explorer
+  use 'nvim-neo-tree/neo-tree.nvim'
+  use 'MunifTanjim/nui.nvim'         -- требуется neo-tree
+  use 'nvim-tree/nvim-web-devicons'  -- иконки для файлов
+
   -- Утилиты
   use 'numToStr/Comment.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
